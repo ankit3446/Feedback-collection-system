@@ -1,0 +1,11 @@
+const express = require('express');
+const mongoose = require('mongoose');
+
+const feedbackSchema = new mongoose.Schema({
+    name:String,
+    contactNumber:String,
+    email:String,
+    feedback:String
+});    
+
+module.exports = mongoose.model('Feedback', feedbackSchema);
